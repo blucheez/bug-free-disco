@@ -1,0 +1,25 @@
+The plan of the GUI will be to allow a pretty looking GUI for any kind of
+data analysis that we want to do with python.
+
+Essentially, we want to make a distributable, pretty looking version of the
+command prompt that can be widely adapted to a wide variety of data inputs and
+outputs
+
+There will be an html file, served as a front and static front end for the user
+to use. There will also be a single javascript file that handles the
+interactions between the GUI and the server side logic.
+In addition to these files, there will be a javascript file that will contain
+the various types of input and output. This will use React to run.
+
+The client will know what program it wants to run, and request data from the
+server
+In return, the server will tell the client what data it wants, and the type
+of data it will output
+The input types are as follows:
+Strings
+Doubles
+Binary Files
+
+The output types are as follows:
+Strings
+Doubles
