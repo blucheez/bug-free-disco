@@ -23,3 +23,7 @@ Binary Files
 The output types are as follows:
 Strings
 Doubles
+
+I give up on trying to use Flask. It's just not a good framework for using a static site, and documentation is pretty weird (the URL_for method which is widely touted about has very few examples). Coupled with the fact that the documentation itself warns not to use it for a web server, my time would be better utilized on a more serious web development platform.
+
+Of course, why don't I just want to use NodeJS? I want access to the python libraries, of course! NodeJS is wonderfully easy to do, but I've already done that with the Podcast Engine app and the SketchArea app, of course.

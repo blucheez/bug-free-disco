@@ -3,6 +3,11 @@
     <title>Program GUI</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <style>
+      h2 {
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
     <nav class="light-blue lighten-1" role="navigation">
@@ -17,17 +22,16 @@
         <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       </div>
     </nav>
-    <div class="container">
-      <h2 style="text-align:center;">Inputs</h2>
-      <form target="cancel" method="post" onsubmit="return update()">
-        <div class="row" id="inputs"></div>
-        <input class="row" type="submit" />
-      </form>
-      <iframe style="display: none;" name="cancel"></iframe>
-      <h2 style="text-align:center;">Outputs</h2>
-      <div class="row" id="outputs">
 
-      </div>
+    <div class="container">
+      <h2>Inputs</h2>
+        <div class="row" id="inputs"></div>
+        <div style="text-align:center" class="row">
+          <button class="btn btn-waves" onclick="return update()">Submit</button>
+        </div>
+
+      <h2>Outputs</h2>
+        <div class="row" id="outputs"></div>
     </div>
 
 

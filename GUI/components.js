@@ -1,7 +1,7 @@
 // creates a div for String input
 // @ param a name for the query
-// returns a div DOM element, to be appended to something
-function stringInputCard(query) {
+// returns nothing, automatically adds
+function stringInputCard(query, containerID) {
   // create the general area
   var area = document.createElement("div");
   $(area).addClass("col s12 m6 l3");
@@ -18,5 +18,9 @@ function stringInputCard(query) {
   $(card).append(content);
 
   $(area).append(card);
-  return area;
+  $(containerID).append(area);
 }
+
+// creates a navbar button for a given program name
+// @ param a name for the navbar button, name for container id
+// returns nothing, automatically adds
