@@ -1,14 +1,38 @@
 <html>
   <head>
     <title>Program GUI</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
   </head>
   <body>
-    <form>
-      <h2>Which program do you want?</h2>
-      <input type="text" name="programName"/>
-      <input type="submit" id="programSelect" />
-    </form>
+    <nav class="light-blue lighten-1" role="navigation">
+      <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">GUI</a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#">Navbar Link</a></li>
+        </ul>
+
+        <ul id="nav-mobile" class="sidenav">
+          <li><a href="#">Navbar Link</a></li>
+        </ul>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
+    <div class="container">
+      <h2 style="text-align:center;">Inputs</h2>
+      <form target="cancel" method="post" onsubmit="return update()">
+        <div class="row" id="inputs"></div>
+        <input class="row" type="submit" />
+      </form>
+      <iframe style="display: none;" name="cancel"></iframe>
+      <h2 style="text-align:center;">Outputs</h2>
+      <div class="row" id="outputs">
+
+      </div>
+    </div>
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="components.js"></script>
     <script src="interactions.js"></script>
   </body>
 </html>
