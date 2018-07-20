@@ -1,0 +1,20 @@
+{
+  "name": "datagui",
+  "version": "1.0.0",
+  "description": "Data analysis gui",
+  "main": "index.js",
+  "scripts": {
+    "test": "console.log('test worked!');",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blucheez/bug-free-disco.git"
+  },
+  "author": "nathanalam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blucheez/bug-free-disco/issues"
+  },
+  "homepage": "https://github.com/blucheez/bug-free-disco#readme"
+}

@@ -12,18 +12,20 @@
   <body>
     <nav class="light-blue lighten-1" role="navigation">
       <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">GUI</a>
-        <ul class="right hide-on-med-and-down">
+        <ul id="links" class="right hide-on-med-and-down">
           <li><a href="#">Navbar Link</a></li>
         </ul>
 
-        <ul id="nav-mobile" class="sidenav">
+        <ul id="mobileLinks" id="nav-mobile" class="sidenav">
           <li><a href="#">Navbar Link</a></li>
         </ul>
         <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       </div>
     </nav>
-
-    <div class="container">
+    <div id="welcome" class="container">
+      <h2>Welcome! Click a link to begin</h1>
+    </div>
+    <div id="interface" class="container">
       <h2>Inputs</h2>
         <div class="row" id="inputs"></div>
         <div style="text-align:center" class="row">

@@ -24,3 +24,10 @@ function stringInputCard(query, containerID) {
 // creates a navbar button for a given program name
 // @ param a name for the navbar button, name for container id
 // returns nothing, automatically adds
+function addLink(name, containerID) {
+  // create the li element
+  var li = document.createElement("li");
+  li.innerHTML = "<a onclick='return programSelect(\"" + name + "\")' href='#'>" + name + "</a>";
+
+  $(containerID).append(li);
+}
